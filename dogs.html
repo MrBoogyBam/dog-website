@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dog Images</title>
+        <link href="./style.css" type="text/css" rel="stylesheet">
+        <script src="./dogDL.js"></script>
+    </head>
+    
+    <body>
+        <div class="square"></div>
+        <div class="center textColor">
+            <h1>Dog Images</h1>
+            <h2>Select a random image in the droplist.</h2>
+
+            <label class="labelColor">Choose an image</label> <br>
+            <select onclick="changeImage(this.selectedIndex)">
+                <option>-- Select an image --</option>
+                <option>Dog1</option>
+                <option>Dog2</option>
+                <option>Dog3</option>
+                <option>Dog4</option>
+                <option>Dog5</option>
+            </select>
+            <img id="dogimage" />
+            <br>
+        </div>
+        <div class="links center">
+            <a href="https://random.dog/">More random dogs</a>
+        </div>
+    </body>
+</html>
